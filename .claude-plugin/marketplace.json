@@ -1,13 +1,21 @@
 {
+	"$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
 	"name": "sundaypower-claude-plugins",
+	"description": "Official plugins for Sunday Power enterprise",
 	"owner": {
 		"name": "Endre Ulberg"
 	},
 	"plugins": [
 		{
 			"name": "sundaypower-claude-plugin",
+			"description": "Adds all skills and agents for the sundaypower enterprise",
+			"version": "0.0.1",
+			"author": {
+				"name": "Endre Ulberg"
+			},
 			"source": "./plugins/sundaypower-claude-plugin",
-			"description": "Adds all skills and agents for the sundaypower enterprise"
+			"category": "productivity",
+			"strict": false
 		}
 	]
 }

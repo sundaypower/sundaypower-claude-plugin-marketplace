@@ -1,0 +1,13 @@
+{
+	"name": "sundaypower-claude-plugins",
+	"owner": {
+		"name": "Endre Ulberg"
+	},
+	"plugins": [
+		{
+			"name": "sp-plugin",
+			"source": "./plugins/sundaypower-claude-plugin",
+			"description": "Adds all skills and agents for the sundaypower enterprise"
+		}
+	]
+}

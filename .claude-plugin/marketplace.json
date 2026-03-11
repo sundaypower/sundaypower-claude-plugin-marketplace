@@ -5,7 +5,7 @@
 	},
 	"plugins": [
 		{
-			"name": "sp-plugin",
+			"name": "sundaypower-claude-plugin",
 			"source": "./plugins/sundaypower-claude-plugin",
 			"description": "Adds all skills and agents for the sundaypower enterprise"
 		}

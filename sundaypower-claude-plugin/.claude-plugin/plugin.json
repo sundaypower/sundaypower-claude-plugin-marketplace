@@ -1,0 +1,8 @@
+{
+	"name": "sundaypower-claude-plugin",
+	"description": "The official distrubution of shared hooks, skills and agents for Sunday Power",
+	"version": "0.0.1",
+	"author": {
+		"name": "Endre Ulberg"
+	}
+}

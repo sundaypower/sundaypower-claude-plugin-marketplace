@@ -393,15 +393,51 @@ hr, .divider {
 
 ```css
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(1.2rem); }
+  from { opacity: 0; transform: translateY(1rem); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Apply with staggered delays: 0.08s, 0.16s, 0.24s … 0.64s */
-.fade-up {
-  animation: fadeUp 0.6s ease forwards;
-}
+/* Helper class — apply directly to elements */
+.animate-in { opacity: 0; animation: fadeUp 0.5s ease forwards; }
+
+/* Staggered delay utilities */
+.delay-1 { animation-delay: 0.05s; } .delay-2 { animation-delay: 0.1s; }
+.delay-3 { animation-delay: 0.15s; } .delay-4 { animation-delay: 0.2s; }
+.delay-5 { animation-delay: 0.3s; } .delay-6 { animation-delay: 0.35s; }
+.delay-7 { animation-delay: 0.4s; }
 ```
+
+---
+
+## Insights / Dashboard Components
+
+Patterns from `shared.css` used in data/dashboard pages.
+
+**Header** — fixed, `z-index: 1000`, `backdrop-filter: blur(20px)`, `0.6rem var(--pad)` padding, bg uses `color-mix(in srgb, var(--bg), transparent 20%)`. Icon buttons (theme toggle, lang toggle): `2.4rem` square, `var(--r)` default, hover → `border-radius: 50%`.
+
+**Auth dropdown** — avatar button `2.4rem` circle; dropdown `.open` class; positioned `top: calc(100% + 0.4rem)` right-aligned; uses `var(--bg-illustration)` bg with `box-shadow: 0 4px 16px rgba(0,0,0,0.25)`.
+
+**Breadcrumb** — `padding-top: 3rem`; links use `var(--text-muted)`, `.current` uses `var(--text) font-weight: 500`.
+
+**Page title** — `max-width: 48rem`; h1 uses H2 tokens at `font-weight: 400`; subtitle uses `var(--text-muted)`.
+
+**Controls** — flex wrap, `gap: 0.8rem`. Selects: `appearance: none`, `var(--bg-illustration)` bg, chevron via `::after` pseudo. Toggle groups: flex row, overflow hidden, `.active` → `var(--btn-cta-bg)`. Period pills: hover/active → `var(--r-hover)`, active color → `var(--tag-text)`.
+
+**Status banner** — small dot (`6px` circle) + text. States: `.live` `#22c55e`, `.mock`/`.loading` `var(--spw-yellow-03)`, `.error` `#ef4444`. Loading pulses via `@keyframes pulse`.
+
+**Chart container** — `var(--bg-illustration)` bg, `var(--r)` radius, `var(--gap)` padding. Inner `.chart-wrap` has `height: 480px`. `.loading-overlay` covers inset-0 with a progress bar (`var(--spw-yellow-03)` fill, width animated via JS).
+
+**Summary grid** — `repeat(4, 1fr)` → 2-col at 991px → 1-col at 479px. Cards: `var(--bg-illustration)`, hover → `var(--r-hover)`. Value uses `var(--large-size)`, label uses `var(--small-size) + var(--text-muted)`. Colored dot (`8px`) for source indicator.
+
+**Explainer** — `<details>` with custom chevron `::before` (CSS border trick, rotates 45deg when `[open]`). Max-width `48rem`.
+
+**Save / Share / Viewer** — `.btn-save` is full-width secondary button. `.viewer-banner` shows avatar + name in `var(--bg-illustration)` strip. `.share-toast` is a flex row with URL input + copy button (CTA style), animated with `fadeUp`.
+
+**Saved analyses grid** — `auto-fill minmax(300px, 1fr)`. Cards hover to `var(--bg-card-hover)`. Type badge uses CTA colors. Delete button absolute top-right, hover → `#ef4444`. Verified badge: `color-mix(in srgb, #22c55e, transparent 80%)` bg.
+
+**Footer** — `var(--hr)` divider line, flex space-between. Mobile → column. Logo SVG at `opacity: 0.5`.
+
+**Badge** — `0.55rem`, uppercase, `0.06em` tracking, `vertical-align: super`, CTA colors.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: sundaypower-brand
-description: Design and build websites, landing pages, and web content using the Sunday Power / Sunday OS brand identity. Use when creating HTML/CSS components, pages, or UI that should match the Sunday Power visual style.
+description: Design and build websites, landing pages, and web content using the Sunday Power / Sunday OS brand identity. Use when creating NextJS components, pages, or UI that should match the Sunday Power visual style.
 ---
 
 # Sunday Power Brand Design

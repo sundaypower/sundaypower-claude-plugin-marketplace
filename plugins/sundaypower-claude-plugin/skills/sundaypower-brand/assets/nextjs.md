@@ -254,7 +254,7 @@ export default function UserMenu({ user, signOutSlot }: UserMenuProps) {
 **Sign out button styling** — target the global class on the server-rendered form button:
 ```css
 .dropdown :global(.signOutBtn) {
-  font-size: var(--small-size); font-weight: 500;
+  font-size: var(--small-size); font-weight: 400;
   background: none; border: none; color: var(--text); cursor: pointer; padding: 0;
   transition: color 0.2s ease;
 }
@@ -327,7 +327,7 @@ export default async function DashboardPage() {
 ```css
 /* Hero */
 .hero { padding-top: 4rem; padding-bottom: var(--space-m); max-width: 52rem; }
-.heroTag { display: inline-block; font-size: var(--small-size); font-weight: 500; color: var(--tag-text); background: var(--tag-bg); padding: 0.35rem 1.2rem; border-radius: var(--r); margin-bottom: var(--space-s); }
+.heroTag { display: inline-block; font-size: var(--small-size); font-weight: 400; color: var(--tag-text); background: var(--tag-bg); padding: 0.35rem 1.2rem; border-radius: var(--r); margin-bottom: var(--space-s); }
 .accent { color: var(--spw-yellow-03); }
 [data-theme="light"] .accent { color: var(--spw-deep); }
 .heroSub { font-size: var(--large-size); line-height: var(--large-lead); color: var(--text-muted); max-width: 36rem; }
@@ -350,7 +350,7 @@ export default async function DashboardPage() {
 .cardIcon { width: 100%; flex: 1; display: flex; align-items: center; justify-content: center; padding: var(--space-m) 0; position: relative; z-index: 1; }
 .cardIcon svg { width: 100%; max-width: 14rem; height: auto; opacity: 0.9; transition: transform 0.4s ease, opacity 0.3s ease; }
 .card:hover .cardIcon svg { transform: scale(1.04); opacity: 1; }
-.cardTitle { font-size: var(--large-size); line-height: var(--large-lead); font-weight: 500; margin-bottom: 0.4rem; }
+.cardTitle { font-size: var(--large-size); line-height: var(--large-lead); font-weight: 400; margin-bottom: 0.4rem; }
 .cardDesc { font-size: var(--body-size); color: var(--text-muted); margin-bottom: var(--space-s); }
 .btnCta { display: inline-block; padding: 0.6rem 2rem; border-radius: var(--r); background: var(--btn-cta-bg); color: var(--btn-cta-text); transition: var(--transition-radius); }
 .btnCta:hover { border-radius: 50px; }
@@ -360,7 +360,7 @@ export default async function DashboardPage() {
 .statItem { padding-left: var(--gap); border-left: 2px solid var(--hr); }
 .statValue { font-size: var(--h2-size); line-height: var(--h2-lead); letter-spacing: var(--h2-track); font-weight: 400; color: var(--spw-yellow-03); }
 [data-theme="light"] .statValue { color: var(--spw-deep); }
-.statLabel { font-size: var(--small-size); color: var(--text-muted); font-weight: 500; margin-top: 0.2rem; }
+.statLabel { font-size: var(--small-size); color: var(--text-muted); font-weight: 400; margin-top: 0.2rem; }
 
 /* Footer */
 .footer { padding: var(--space-m) 0 var(--space-s); display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--hr); }
@@ -488,7 +488,7 @@ Patterns from `shared.css` used in data/dashboard pages.
 
 **Auth dropdown** — avatar button `2.4rem` circle; dropdown `.open` class; positioned `top: calc(100% + 0.4rem)` right-aligned; uses `var(--bg-illustration)` bg with `box-shadow: 0 4px 16px rgba(0,0,0,0.25)`.
 
-**Breadcrumb** — `padding-top: 3rem`; links use `var(--text-muted)`, `.current` uses `var(--text) font-weight: 500`.
+**Breadcrumb** — `padding-top: 3rem`; links use `var(--text-muted)`, `.current` uses `var(--text) font-weight: 400`.
 
 **Page title** — `max-width: 48rem`; h1 uses H2 tokens at `font-weight: 400`; subtitle uses `var(--text-muted)`.
 

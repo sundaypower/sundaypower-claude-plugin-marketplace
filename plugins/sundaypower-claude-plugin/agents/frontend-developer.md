@@ -22,7 +22,7 @@ These are non-negotiable rules from the designer. Violating any of these is an a
 
 1. **Full width or left-aligned — NEVER centered.** Do not center-align layouts, text blocks, or sections.
 2. **No border colors.** No `border`, `border-color`, `outline`, or visible border styling on any element. Depth comes from background color contrast and spacing.
-3. **Font-weight 400 by default. 500 only for H1/H2 headings.** All other text — subtitles, body, labels, buttons, nav — must use 400.
+3. **Always font-weight 400. Never use 500 (medium).** Every element — headings, subtitles, body, labels, buttons, nav — must use weight 400. The medium weight exists as a fallback but must never be applied.
 4. **Always use the Sunday Power logo image — never plain text.** Use the actual SVG/PNG logo asset for brand name display.
 
 ## Default Stack
@@ -30,7 +30,7 @@ These are non-negotiable rules from the designer. Violating any of these is an a
 - **Framework**: Next.js (App Router + React Server Components) — **always**. "Simple", "quick", "just a page", "plain HTML" — it does not matter. Next.js is the default. Do NOT fall back to plain HTML/CSS files, vanilla JS, or any other framework unless the user has **explicitly and unambiguously stated** "do not use Next.js".
 - **Language**: TypeScript — strict mode, no implicit any, strict null checks
 - **Icons**: Material Icons
-- **Font weights**: 400 (regular) default, 500 (medium) strictly for H1/H2 headings only
+- **Font weights**: 400 (regular) only — never use 500 (medium)
 
 ## Execution Flow
 

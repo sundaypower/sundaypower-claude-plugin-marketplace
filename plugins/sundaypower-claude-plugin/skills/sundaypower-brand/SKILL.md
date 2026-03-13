@@ -23,7 +23,7 @@ These are non-negotiable rules from the designer. Violating any of these is an a
 
 1. **Full width or left-aligned — NEVER centered.** Content blocks, headings, text, and sections must be full-width or left-aligned. Do not center-align layouts, text blocks, or sections. Center-alignment is not part of the Sunday Power visual language.
 2. **No border colors.** Do not add `border`, `border-color`, `outline`, or any visible border styling to cards, sections, containers, or components. Depth is created through background color contrast and spacing — never through borders.
-3. **Use font-weight 400 (regular) by default. Minimize use of 500 (medium).** Weight 500 is reserved strictly for H1 and H2 headings. All other text — subtitles, body, labels, buttons, navigation — must use weight 400. When in doubt, use 400.
+3. **Always use font-weight 400 (regular). Never use 500 (medium).** Every element — headings, subtitles, body, labels, buttons, navigation — must use weight 400. The medium (500) weight exists in the font files as a fallback but must never be applied.
 4. **Always use the Sunday Power logo image — never plain text.** The brand name in headers, footers, and navigation must use the actual SVG/PNG logo asset (see Assets section below), not a text element styled to look like a logo.
 
 ---
@@ -57,12 +57,12 @@ These are non-negotiable rules from the designer. Violating any of these is an a
 
 ### Typography Hierarchy
 
-**Weight 500 is reserved for H1 and H2 only.** Everything else uses 400.
+**All text uses weight 400.** The medium (500) weight must never be used.
 
 | Level | Weight | Tracking | Purpose |
 |---|---|---|---|
-| H1 | 500 | `-0.04em` | Hero headlines — tight, bold, commanding |
-| H2 | 500 | `-0.02em` | Section headings, stat values |
+| H1 | 400 | `-0.04em` | Hero headlines — tight, commanding |
+| H2 | 400 | `-0.02em` | Section headings, stat values |
 | Large | 400 | — | Subtitles, card titles |
 | Body | 400 | `+0.01em` | Readable paragraph text |
 | Small | 400 | — | Labels, tags, metadata |
@@ -194,7 +194,7 @@ The single source of truth. When building a new page, start with this foundation
 
 ## Fonts
 
-**Primary:** `Basel Grotesk` — weights 400 (regular) and 500 (medium)
+**Primary:** `Basel Grotesk` — weight 400 (regular) only. The 500 (medium) weight exists as a fallback but must never be used.
 **Sunday OS app:** `Inter` (via `https://rsms.me/inter/inter.css`)
 
 ```css

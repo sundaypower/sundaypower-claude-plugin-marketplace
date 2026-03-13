@@ -11,6 +11,21 @@ The reference implementation is **https://insights.sundaypower.com** — use it 
 
 For concrete Next.js implementation patterns, component code, and CSS module examples, see `assets/nextjs.md`.
 
+### Visual Reference
+
+**IMPORTANT:** Before finalizing any UI work, always read the file `assets/Correct Design.png` (using the Read tool) to visually verify your output against the approved design. This image is the canonical visual reference for what correct Sunday Power design looks like. Compare your implementation against it to ensure consistent layout, spacing, color usage, and overall visual profile across all pages and components.
+
+---
+
+## Critical Layout & Style Rules
+
+These are non-negotiable rules from the designer. Violating any of these is an automatic rejection:
+
+1. **Full width or left-aligned — NEVER centered.** Content blocks, headings, text, and sections must be full-width or left-aligned. Do not center-align layouts, text blocks, or sections. Center-alignment is not part of the Sunday Power visual language.
+2. **No border colors.** Do not add `border`, `border-color`, `outline`, or any visible border styling to cards, sections, containers, or components. Depth is created through background color contrast and spacing — never through borders.
+3. **Use font-weight 400 (regular) by default. Minimize use of 500 (medium).** Weight 500 is reserved strictly for H1 and H2 headings. All other text — subtitles, body, labels, buttons, navigation — must use weight 400. When in doubt, use 400.
+4. **Always use the Sunday Power logo image — never plain text.** The brand name in headers, footers, and navigation must use the actual SVG/PNG logo asset (see Assets section below), not a text element styled to look like a logo.
+
 ---
 
 ## Design Principles
@@ -21,7 +36,7 @@ For concrete Next.js implementation patterns, component code, and CSS module exa
 4. **Playful interactions** — Buttons pill-ify on hover; cards lift and expand corners
 5. **Theme-aware via `data-theme`** — All components adapt between dark and light via CSS variables on the `<html>` element
 6. **Generous spacing** — `--space-l: 9rem` for major section separation
-7. **Minimal decoration** — No heavy shadows; depth via color contrast and spacing
+7. **Minimal decoration** — No borders, no heavy shadows; depth via background color contrast and spacing only
 8. **Consistent gaps** — `--gap` used uniformly for grids; `--pad` for component padding
 9. **Semantic muting** — Use `color-mix()` for muted text and dividers — no hardcoded opacity values
 
@@ -42,13 +57,15 @@ For concrete Next.js implementation patterns, component code, and CSS module exa
 
 ### Typography Hierarchy
 
+**Weight 500 is reserved for H1 and H2 only.** Everything else uses 400.
+
 | Level | Weight | Tracking | Purpose |
 |---|---|---|---|
 | H1 | 500 | `-0.04em` | Hero headlines — tight, bold, commanding |
 | H2 | 500 | `-0.02em` | Section headings, stat values |
 | Large | 400 | — | Subtitles, card titles |
 | Body | 400 | `+0.01em` | Readable paragraph text |
-| Small | 400/500 | — | Labels, tags, metadata |
+| Small | 400 | — | Labels, tags, metadata |
 
 ### Interaction Hierarchy
 

@@ -297,13 +297,3 @@ Base path: `team/`
 | `Einar Sunde Styreleder.jpg` | Einar Sunde | Board Chair (Styreleder) |
 
 ---
-
-## Sunday OS App-Specific Notes
-
-Sunday OS uses Tailwind CSS v4 with the Inter font. When building Sunday OS UI:
-
-- Use `Inter` font (via `https://rsms.me/inter/inter.css`)
-- Brand colors: `--brand-primary: #112640`, `--brand-secondary: #6fc890`, `--brand-blue-500: #2e7dcc`
-- The app uses shadcn/ui-style component tokens (card, accent, border, etc.)
-- Follows standard Tailwind patterns with custom brand overrides
-- SPA architecture (single `<main id="app">` mount point)

@@ -13,7 +13,7 @@ For concrete Next.js implementation patterns, component code, and CSS module exa
 
 ### Visual Reference
 
-**IMPORTANT:** Before finalizing any UI work, always read the file `assets/Correct Design.png` (using the Read tool) to visually verify your output against the approved design. This image is the canonical visual reference for what correct Sunday Power design looks like. Compare your implementation against it to ensure consistent layout, spacing, color usage, and overall visual profile across all pages and components.
+**IMPORTANT:** Before finalizing any UI work, always read both `assets/Correct Dark Mode.png` and `assets/Correct Light Mode.png` (using the Read tool) to visually verify your output against the approved designs. These images are the canonical visual references for what correct Sunday Power design looks like in each theme. Compare your implementation against both to ensure consistent layout, spacing, color usage, and overall visual profile across all pages and components in both dark and light mode. Use the files named Supplement in the `assets` folder as additional context.
 
 ---
 

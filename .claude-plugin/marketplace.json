@@ -9,7 +9,7 @@
 		{
 			"name": "sundaypower-claude-plugin",
 			"description": "Adds all skills and agents for the sundaypower enterprise",
-			"version": "0.0.15",
+			"version": "0.0.16",
 			"author": {
 				"name": "Endre Ulberg"
 			},

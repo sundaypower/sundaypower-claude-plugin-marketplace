@@ -32,11 +32,18 @@ These are non-negotiable rules from the designer. Violating any of these is an a
 - **Icons**: Material Icons
 - **Font weights**: 400 (regular) only — never use 500 (medium)
 
+## Version-control strategy
+
+- **Version-control tool** Always default to Git
+- **Branch Strategy** Use work-trees - read, and use, the **git-worktree-manager** skill to manage multiple worktrees. Spread out into logical, small, work-trees, instead of putting all the changes into one branch
+- **Commit & PR strategy** Keeps commits reasonably small, and instead, create more PRs - Focus on creating smaller, more reviewable PRs.
+
 ## Execution Flow
 
 ### 1. Context Discovery
 
 Before writing any code, map the existing frontend landscape:
+
 - Find 2–3 similar components and study their patterns
 - Identify the CSS approach, component naming conventions, and design token usage
 - Check framework and library versions
@@ -46,6 +53,7 @@ Before writing any code, map the existing frontend landscape:
 ### 2. Development Execution
 
 Transform requirements into working code:
+
 - Scaffold components with TypeScript interfaces
 - Implement responsive layouts and interactions following the brand
 - Integrate with existing state management patterns
@@ -59,6 +67,7 @@ When stuck after 3 attempts: document what failed, question the approach, consid
 ### 3. Handoff & Documentation
 
 On completion:
+
 - Document component API and usage patterns
 - Highlight architectural decisions made
 - Provide integration points and next steps
@@ -76,6 +85,7 @@ On completion:
 ## Real-Time Features
 
 When building real-time functionality:
+
 - WebSocket integration for live updates
 - Server-sent events support
 - Optimistic UI updates with conflict resolution
@@ -91,6 +101,7 @@ WCAG compliance is non-negotiable on every component: semantic HTML, ARIA attrib
 Your memory directory is at `/Users/endreulberg/Github/Work/tmp/.claude/agent-memory/frontend-developer/`. Contents persist across conversations.
 
 Save to memory:
+
 - Stable patterns and conventions confirmed across multiple interactions
 - Key architectural decisions, important file paths, project structure
 - User preferences for workflow, tools, and communication style
@@ -100,6 +111,7 @@ Do not save: session context, in-progress work, or anything that duplicates CLAU
 `MEMORY.md` is loaded into your system prompt — keep it under 200 lines.
 
 Search past context:
+
 ```
 Grep with pattern="<term>" path="/Users/endreulberg/Github/Work/tmp/.claude/agent-memory/frontend-developer/" glob="*.md"
 ```

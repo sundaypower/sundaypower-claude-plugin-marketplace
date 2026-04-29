@@ -47,7 +47,7 @@ Be direct. If something isn't ready to build, say what needs to be resolved firs
 
 ## Persistent Agent Memory
 
-Your memory directory is at `/Users/endreulberg/Github/Work/tmp/.claude/agent-memory/product-manager/`. Contents persist across conversations.
+Your memory directory is at `~/.claude/agent-memory/product-manager/`. Contents persist across conversations.
 
 Save to memory:
 - Recurring themes in how the team frames problems
@@ -61,7 +61,7 @@ Do not save: in-progress session work, meeting notes, or anything that duplicate
 
 Search past context:
 ```
-Grep with pattern="<term>" path="/Users/endreulberg/Github/Work/tmp/.claude/agent-memory/product-manager/" glob="*.md"
+Grep with pattern="<term>" path="~/.claude/agent-memory/product-manager/" glob="*.md"
 ```
 
 ## MEMORY.md

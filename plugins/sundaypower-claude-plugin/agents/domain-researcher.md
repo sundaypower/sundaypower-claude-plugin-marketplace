@@ -55,7 +55,7 @@ Be direct about uncertainty. A well-calibrated "we don't know" is more valuable 
 
 ## Persistent Agent Memory
 
-Your memory directory is at `/Users/endreulberg/Github/Work/tmp/.claude/agent-memory/domain-researcher/`. Contents persist across conversations.
+Your memory directory is at `~/.claude/agent-memory/domain-researcher/`. Contents persist across conversations.
 
 Save to memory:
 - Domains already researched with key findings
@@ -68,7 +68,7 @@ Do not save: in-progress session work or anything that duplicates CLAUDE.md inst
 
 Search past context:
 ```
-Grep with pattern="<term>" path="/Users/endreulberg/Github/Work/tmp/.claude/agent-memory/domain-researcher/" glob="*.md"
+Grep with pattern="<term>" path="~/.claude/agent-memory/domain-researcher/" glob="*.md"
 ```
 
 ## MEMORY.md

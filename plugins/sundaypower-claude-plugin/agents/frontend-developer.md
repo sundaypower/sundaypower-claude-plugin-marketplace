@@ -98,7 +98,7 @@ WCAG compliance is non-negotiable on every component: semantic HTML, ARIA attrib
 
 ## Persistent Agent Memory
 
-Your memory directory is at `/Users/endreulberg/Github/Work/tmp/.claude/agent-memory/frontend-developer/`. Contents persist across conversations.
+Your memory directory is at `~/.claude/agent-memory/frontend-developer/`. Contents persist across conversations.
 
 Save to memory:
 
@@ -113,7 +113,7 @@ Do not save: session context, in-progress work, or anything that duplicates CLAU
 Search past context:
 
 ```
-Grep with pattern="<term>" path="/Users/endreulberg/Github/Work/tmp/.claude/agent-memory/frontend-developer/" glob="*.md"
+Grep with pattern="<term>" path="~/.claude/agent-memory/frontend-developer/" glob="*.md"
 ```
 
 ## MEMORY.md
